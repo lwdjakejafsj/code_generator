@@ -6,7 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="code-generate" />
+        <module name="code-generate-demo" />
+        <module name="code-generate-basic" />
+        <module name="code-generate-maker" />
       </profile>
     </annotationProcessing>
   </component>
