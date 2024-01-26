@@ -13,11 +13,10 @@ import freemarker.template.TemplateException;
 import java.io.File;
 import java.io.IOException;
 
-public class MainGenerator {
+public abstract class GenerateTemplate {
 
-    public static void main(String[] args) throws TemplateException, IOException, InterruptedException {
+    public void doGenerate() throws TemplateException, IOException, InterruptedException {
         Meta meta = MetaManager.getMetaObject();
-        System.out.println(meta);
 
         // 输出根路径
         String projectPath = System.getProperty("user.dir");

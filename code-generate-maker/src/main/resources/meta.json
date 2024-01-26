@@ -6,21 +6,23 @@
   "author": "luowei",
   "createTime": "2023-11-22",
   "fileConfig": {
-    "inputRootPath": "D:/bc/ownProject/code_generate/backend/code-generate-demo",
+    "inputRootPath": ".source/acm-template-pro",
     "outputRootPath": "generated",
+    "sourceRootPath": "D:\\bc\\ownProject\\code_generate\\backend\\code-generate-demo",
     "type": "dir",
     "files": [
+      {
+        "inputPath": ".gitignore",
+        "outputPath": ".gitignore",
+        "type": "file",
+        "generateType": "static",
+        "condition": "needGit"
+      },
       {
         "inputPath": "src/com/luowei/acm/MainTemplate.java.ftl",
         "outputPath": "src/com/luowei/acm/MainTemplate.java",
         "type": "file",
         "generateType": "dynamic"
-      },
-      {
-        "inputPath": ".gitignore",
-        "outputPath": ".gitignore",
-        "type": "file",
-        "generateType": "static"
       },
       {
         "inputPath": "README.md",
@@ -52,6 +54,13 @@
         "description": "输出信息",
         "defaultValue": "sum = ",
         "abbr": "o"
+      },
+      {
+        "fieldName": "needGit",
+        "type": "boolean",
+        "description": "是否生成 .gitignore 文件",
+        "defaultValue": true,
+        "abbr": "n"
       }
     ]
   }
